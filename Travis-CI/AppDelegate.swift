@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
-        //Removed Storyboard
+        //Removed Storyboard from xcode
         
         let navController = UINavigationController(rootViewController: ViewController())
         navController.navigationBar.prefersLargeTitles = true
