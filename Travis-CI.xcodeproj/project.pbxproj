@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		E1DAD2E8236DAF240014FA12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD2E7236DAF240014FA12 /* AppDelegate.swift */; };
 		E1DAD2EA236DAF240014FA12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD2E9236DAF240014FA12 /* ViewController.swift */; };
-		E1DAD2ED236DAF240014FA12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DAD2EB236DAF240014FA12 /* Main.storyboard */; };
 		E1DAD2EF236DAF260014FA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DAD2EE236DAF260014FA12 /* Assets.xcassets */; };
 		E1DAD2F2236DAF260014FA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DAD2F0236DAF260014FA12 /* LaunchScreen.storyboard */; };
-		E1DAD2FD236DAF260014FA12 /* Travis_CITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD2FC236DAF260014FA12 /* Travis_CITests.swift */; };
+		E1DAD308236DAF640014FA12 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD307236DAF640014FA12 /* AppModelTests.swift */; };
+		E1DAD30B236DAF740014FA12 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD309236DAF740014FA12 /* AppModel.swift */; };
+		E1DAD30C236DAF740014FA12 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAD30A236DAF740014FA12 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		E1DAD2E4236DAF240014FA12 /* Travis-CI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travis-CI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DAD2E7236DAF240014FA12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1DAD2E9236DAF240014FA12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E1DAD2EC236DAF240014FA12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1DAD2EE236DAF260014FA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DAD2F1236DAF260014FA12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DAD2F3236DAF260014FA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DAD2F8236DAF260014FA12 /* Travis-CITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travis-CITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1DAD2FC236DAF260014FA12 /* Travis_CITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travis_CITests.swift; sourceTree = "<group>"; };
 		E1DAD2FE236DAF260014FA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DAD307236DAF640014FA12 /* AppModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
+		E1DAD309236DAF740014FA12 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		E1DAD30A236DAF740014FA12 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 			children = (
 				E1DAD2E7236DAF240014FA12 /* AppDelegate.swift */,
 				E1DAD2E9236DAF240014FA12 /* ViewController.swift */,
-				E1DAD2EB236DAF240014FA12 /* Main.storyboard */,
+				E1DAD30D236DAF960014FA12 /* App Model */,
 				E1DAD2EE236DAF260014FA12 /* Assets.xcassets */,
 				E1DAD2F0236DAF260014FA12 /* LaunchScreen.storyboard */,
 				E1DAD2F3236DAF260014FA12 /* Info.plist */,
@@ -90,10 +92,19 @@
 		E1DAD2FB236DAF260014FA12 /* Travis-CITests */ = {
 			isa = PBXGroup;
 			children = (
-				E1DAD2FC236DAF260014FA12 /* Travis_CITests.swift */,
+				E1DAD307236DAF640014FA12 /* AppModelTests.swift */,
 				E1DAD2FE236DAF260014FA12 /* Info.plist */,
 			);
 			path = "Travis-CITests";
+			sourceTree = "<group>";
+		};
+		E1DAD30D236DAF960014FA12 /* App Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1DAD309236DAF740014FA12 /* AppModel.swift */,
+				E1DAD30A236DAF740014FA12 /* AppState.swift */,
+			);
+			path = "App Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +190,6 @@
 			files = (
 				E1DAD2F2236DAF260014FA12 /* LaunchScreen.storyboard in Resources */,
 				E1DAD2EF236DAF260014FA12 /* Assets.xcassets in Resources */,
-				E1DAD2ED236DAF240014FA12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DAD2EA236DAF240014FA12 /* ViewController.swift in Sources */,
+				E1DAD30B236DAF740014FA12 /* AppModel.swift in Sources */,
 				E1DAD2E8236DAF240014FA12 /* AppDelegate.swift in Sources */,
+				E1DAD30C236DAF740014FA12 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DAD2FD236DAF260014FA12 /* Travis_CITests.swift in Sources */,
+				E1DAD308236DAF640014FA12 /* AppModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +233,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E1DAD2EB236DAF240014FA12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1DAD2EC236DAF240014FA12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1DAD2F0236DAF260014FA12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UT2MG9LM9;
 				INFOPLIST_FILE = "Travis-CI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UT2MG9LM9;
 				INFOPLIST_FILE = "Travis-CI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
