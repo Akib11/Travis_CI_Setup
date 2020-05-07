@@ -39,5 +39,11 @@ class AppModelTests: XCTestCase {
     let observedState = sut.appState
     XCTAssertEqual(observedState, AppState.inProgress)
   }
+    
+    func testMoreAppModel_whenInitialized_isInNotStartedState() {
+      
+      let initialState = sut.appState
+      XCTAssertEqual(initialState, AppState.notStarted)
+    }
 
 }
